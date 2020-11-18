@@ -17,8 +17,8 @@ func send(ch chan int, size int) {
 }
 
 func main() {
-	ch1 := make(chan int, 2)
-	ch2 := make(chan int, 1)
+	ch1 := make(chan int)
+	ch2 := make(chan int)
 	// defer close(ch1)
 	// defer close(ch2)
 
